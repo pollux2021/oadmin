@@ -1,0 +1,7 @@
+{
+  "name": "@types/oa",
+  "version": "0.0.0",
+  "files": [
+    "type/"
+  ]
+}
