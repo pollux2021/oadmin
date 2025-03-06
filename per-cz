@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+pnpm run lint
+
+exitCode="$?"
+if [ "$exitCode" = "0" ]; then
+    git cz
+else
+    exit $exitCode
+fi

@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "@otypes/*": ["../../packages/otypes/src/*"],
+      "@public/*": ["../../packages/public/*"],
+      "@app/*": ["../../packages/apps/*"],
+      "@packages/*": ["../../packages/*"],
+      "@outils/*": ["../../packages/outils/src/*"],
+      "@ohooks/*": ["../../packages/ohooks/src/*"],
+      "@oapis/*": ["../../packages/oapis/src/*"],
+      "@oweb/*": ["../../packages/oweb/src/*"],
+      "@oconstants/*": ["../../packages/oconstants/src/*"]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.DS_Store
+node_modules
+.turbo
+*.log
+dist
+dist-ssr
+dist-admin
+*.local
+.cache
+server/dist
+public/dist
+.nuxt
+.output
+cache
+*.zip
+components.d.ts
+auto-import.d.ts

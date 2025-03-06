@@ -1,0 +1,16 @@
+node_modules
+dist
+dist-ssr
+.turbo
+.cache
+.nuxt
+.output
+vite-env.d.ts
+nuxt.config.ts
+.vscode
+.npmrc
+.temp
+.dist-web
+.dist-admin
+.dist-mobile
+*.js

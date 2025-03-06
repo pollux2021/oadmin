@@ -1,0 +1,102 @@
+{
+  "name": "oadmin",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "cz": "bash per-cz",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "preview": "turbo run preview",
+    "lint": "vue-tsc && eslint . --ignore-path .eslintignore --ext .vue,.js,.jsx,.ts,.tsx",
+    "fix": "eslint . --ignore-path .eslintignore --fix",
+    "format": "prettier --write \"**/*.{vue,ts,tsx,md,js}\"",
+    "installAllNm": "pnpm install",
+    "clearAllNm": "rimraf node_modules && rimraf */**/node_modules"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,json}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.md": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "@antv/g2plot": "^2.4.31",
+    "@arco-design/color": "^0.4.0",
+    "@arco-design/web-vue": "^2.48.0",
+    "@iconify/vue": "^4.1.1",
+    "@mojs/core": "^1.5.1",
+    "@tanstack/vue-query": "^4.29.20",
+    "@types/lodash-es": "^4.17.7",
+    "@types/nprogress": "^0.2.0",
+    "@types/qrcode": "^1.5.1",
+    "@vueuse/core": "^10.2.1",
+    "add": "^2.0.6",
+    "axios": "^1.4.0",
+    "dayjs": "^1.11.9",
+    "html2canvas": "^1.4.1",
+    "js-sha256": "^0.9.0",
+    "lodash-es": "^4.17.21",
+    "mammoth": "^1.6.0",
+    "mitt": "^3.0.1",
+    "nprogress": "^0.2.0",
+    "oaxios": "workspace:*",
+    "pinia": "^2.1.4",
+    "pinia-store": "workspace:*",
+    "qrcode": "^1.5.3",
+    "relativeTime": "link:dayjs/plugin/relativeTime",
+    "tinymce": "^6.6.0",
+    "uid": "^2.0.2",
+    "v-viewer": "^3.0.11",
+    "viewerjs": "^1.11.3",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4",
+    "xss": "^1.0.14"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@iconify/json": "^2.2.89",
+    "@types/lodash-es": "^4.17.7",
+    "@types/nprogress": "^0.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.0.0",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "husky": "^8.0.3",
+    "less": "^4.2.0",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.2",
+    "typescript": "^5.2.2",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-icons": "^0.16.5",
+    "unplugin-vue-components": "^0.25.1",
+    "vite": "^4.4.3",
+    "vue-tsc": "^1.8.8"
+  }
+}
